@@ -1,0 +1,103 @@
+.banner {
+    position: relative;
+  }
+  
+  .banner img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+  }
+  
+  .banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
+  .banner-subtitle {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .banner-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .learn-more-btn {
+    background-color: #8a2be2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .learn-more-btn:hover {
+    background-color: #000;
+  }
+  
+  /* Circular buttons with arrow icons */
+  .banner-buttons {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .banner-button {
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .banner-button:hover {
+    background-color: #8a2be2;
+    border-color: #8a2be2;
+    color: white;
+  }
+  
+  .banner-button.left {
+    transform: rotate(0deg); /* Ensure arrow faces left */
+  }
+  
+  .banner-button.right {
+    transform: rotate(0deg); /* Ensure arrow faces right */
+  }
+  
+  /* Rectangle overlays */
+  .banner-overlay {
+    position: absolute;
+    width: 100px;
+    height: 600px;
+    background-color: rgba(138, 43, 226, 0.5); /* Same color as the button with transparency */
+  }
+  
+  .banner-overlay.left {
+    top: 0;
+    left: 0;
+    transform: skewY(20deg); /* Slanting effect */
+  }
+  
+  .banner-overlay.right {
+    top: 0;
+    right: 0;
+    transform: skewY(-20deg); /* Slanting effect */
+  }
+  
