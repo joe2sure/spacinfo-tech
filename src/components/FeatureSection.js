@@ -13,7 +13,7 @@ const FeatureCard = ({ image, icon, title }) => (
       </div>
     </div>
     <div className="feature-content">
-      <h3>{title}</h3>
+      <p>{title}</p>
     </div>
   </div>
 );
@@ -23,17 +23,17 @@ const FeaturesSection = () => {
     {
       image: require('../assets/images/banner_img1.jpg'),
       icon: <FaLightbulb />,
-      title: 'Perfect solutions that business demands'
+      title: 'We are dedicated to empowering talent with future-ready skills, integrating the latest IT trends and practices to prepare our trainees for the challenges of tomorrow’s digital landscape'
     },
     {
       image: require('../assets/images/AboutUs_img.jpg'),
       icon: <FaCog />,
-      title: 'Providing excellent technology solutions'
+      title: 'Through a combination of innovative methodologies and real-world applications, we transform potential into professional mastery, producing highly skilled IT professionals ready to lead in a competitive market'
     },
     {
       image: require('../assets/images/banner_img3.jpg'),
       icon: <FaRocket />,
-      title: 'We eagerly put in use new IT innovations'
+      title: 'We eagerly put in use new IT innovations to beat market demands in churning the best of the best'
     }
   ];
 

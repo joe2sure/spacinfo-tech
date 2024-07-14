@@ -42,8 +42,8 @@ const Banner = () => {
           <div key={index}>
             <img src={image} alt={`Banner ${index + 1}`} />
             <div className="banner-content">
-              <p className="banner-subtitle">EXPERIENCE THE BEST IT SOLUTIONS</p>
-              <h1 className="banner-title">IT SOLUTIONS AND SERVICES</h1>
+              <p className="banner-subtitle">BECOME EMPLOYABLE IN DEMANDING IT SKILL</p>
+              <h1 className="banner-title">GET TRAINED BY EXPERIENCED EXPERT</h1>
               <button className="learn-more-btn">LEARN MORE</button>
             </div>
           </div>

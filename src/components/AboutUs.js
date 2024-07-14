@@ -23,15 +23,15 @@ const AboutUs = () => {
           <div className="about-services">
             <div className="service-item">
               <FaDesktop className="service-icon" />
-              <span>Web Development</span>
+              <span>Azure Systems Administrator</span>
             </div>
             <div className="service-item">
               <FaNetworkWired className="service-icon" />
-              <span>Internal Networking</span>
+              <span>Data Scientist</span>
             </div>
           </div>
           <ul className="about-checklist">
-            <li><FaCheck className="check-icon" /> Bringing new IT solutions to the market</li>
+            <li><FaCheck className="check-icon" /> Bridging the gap of unemployable graduates and the demands of tech market</li>
             <li><FaCheck className="check-icon" /> To be included in the list of the best 100 IT companies</li>
             <li><FaCheck className="check-icon" /> Our company have senior IT professionals</li>
           </ul>

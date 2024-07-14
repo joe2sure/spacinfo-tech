@@ -1,0 +1,267 @@
+.service-page {
+    width: 100%;
+  }
+  
+  .service-banner {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+  }
+  
+  .service-banner-content {
+    text-align: center;
+  }
+  
+  .service-banner-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .service-banner-subtitle {
+    font-size: 18px;
+  }
+  
+  .about-section {
+    padding: 80px 0;
+    background-color: #f8f8f8;
+  }
+  
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+  
+  .about-images {
+    position: relative;
+    flex: 1;
+  }
+  
+  .about-image-1 {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .about-image-2 {
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    width: 60%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-content {
+    flex: 1;
+  }
+  
+  .about-subtitle {
+    font-size: 18px;
+    color: #8a2be2;
+    margin-bottom: 10px;
+  }
+  
+  .about-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .about-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .about-services {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .service-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .service-icon {
+    font-size: 24px;
+    color: #8a2be2;
+  }
+  
+  .about-checklist {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  
+  .about-checklist li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .check-icon {
+    color: #8a2be2;
+  }
+  
+  .learn-more-btn {
+    background-color: #8a2be2;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .learn-more-btn:hover {
+    background-color: #000;
+  }
+  
+  .cards-section {
+    padding: 40px 20px;
+    background-color: #fff;
+  }
+  
+  .cards-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+  }
+  
+  .card {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .card-image-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    object-fit: cover;
+    position: absolute;
+    top: -50px;
+  }
+  
+  .card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .more-services-section {
+    padding: 80px 20px;
+    background-color: #f8f8f8;
+  }
+  
+  .more-services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+  
+  .more-services-images {
+    position: relative;
+    flex: 1;
+  }
+  
+  .more-service-image-1 {
+    width: 60%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .more-service-image-2 {
+    width: 60%;
+    border-radius: 8px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .more-services-content {
+    flex: 1;
+  }
+  
+  .more-services-subtitle {
+    font-size: 18px;
+    color: #8a2be2;
+    margin-bottom: 10px;
+  }
+  
+  .more-services-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .more-services-columns {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .more-service-column {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .more-service-circle {
+    background-color: #8a2be2;
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .more-service-text {
+    font-size: 16px;
+    color: #666;
+  }
+  

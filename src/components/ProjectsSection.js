@@ -23,12 +23,12 @@ const ProjectCard = ({ image, title }) => (
 
 const ProjectsSection = () => {
   const projects = [
-    { image: require('../assets/images/AboutUs_img.jpg'), title: 'Web Application Development' },
-    { image: require('../assets/images/banner_img1.jpg'), title: 'Mobile App Design' },
-    { image: require('../assets/images/banner_img3.jpg'), title: 'Cloud Infrastructure Setup' },
-    { image: require('../assets/images/banner_img2.jpg'), title: 'AI-powered Analytics Dashboard' },
-    { image: require('../assets/images/banner_img1.jpg'), title: 'E-commerce Platform' },
-    { image: require('../assets/images/AboutUs_img2.jpg'), title: 'Cybersecurity Solution' },
+    { image: require('../assets/images/AboutUs_img.jpg'), title: 'Cloud Infrastructure Setup' },
+    { image: require('../assets/images/banner_img1.jpg'), title: 'AI-powered Analytics' },
+    { image: require('../assets/images/banner_img3.jpg'), title: 'Cybersecurity Solution' },
+    { image: require('../assets/images/banner_img2.jpg'), title: 'AI-powered Analytics' },
+    { image: require('../assets/images/banner_img1.jpg'), title: 'Cybersecurity Solution' },
+    { image: require('../assets/images/AboutUs_img2.jpg'), title: 'Cloud Infrastructure Setup' },
   ];
 
   const settings = {
