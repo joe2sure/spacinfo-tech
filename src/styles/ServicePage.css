@@ -131,6 +131,8 @@
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
   }
   
   .learn-more-btn:hover {
@@ -196,27 +198,34 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 40px;
   }
   
   .more-services-images {
     position: relative;
     flex: 1;
+    min-height: 300px; /* Adjust as needed */
+  }
+  
+  .more-service-image-1,
+  .more-service-image-2 {
+    position: absolute;
+    width: 70%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
   
   .more-service-image-1 {
-    width: 60%;
-    border-radius: 8px;
-    margin-bottom: 20px;
+    top: 0;
+    left: 0;
+    z-index: 2;
   }
   
   .more-service-image-2 {
-    width: 60%;
-    border-radius: 8px;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    bottom: 0;
+    right: 0;
   }
   
   .more-services-content {
@@ -248,20 +257,54 @@
   }
   
   .more-service-circle {
-    background-color: #8a2be2;
-    color: white;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
+    background-color: white;
+    border: 2px solid #007bff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 18px;
     font-weight: bold;
+    color: #007bff;
+    margin-right: 15px;
+    flex-shrink: 0;
+  }
+
+  .more-service-text-container {
+    display: flex;
+    flex-direction: column;
   }
   
   .more-service-text {
     font-size: 16px;
     color: #666;
+    margin-bottom: 10px;
   }
   
+  .read-more-btn {
+    align-self: flex-start;
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0;
+    text-decoration: underline;
+  }
+  
+  .read-more-btn:hover {
+    color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .more-service-column {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .more-service-circle {
+      margin-bottom: 10px;
+    }
+  }

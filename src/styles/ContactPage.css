@@ -35,7 +35,7 @@
   
   .contact-text {
     background-color: rgb(255, 255, 255);
-    flex: 1;
+    flex: 0 0 40%; /* Adjust the width as needed */
     padding: 20px;
   }
   
@@ -46,7 +46,7 @@
   }
   
   .contact-title {
-    font-size: 36px;
+    font-size: 42px;
     font-weight: bold;
     margin-bottom: 20px;
     color: #333;
@@ -55,12 +55,12 @@
   .contact-info {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
   }
   
   .contact-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px;
   }
   
@@ -69,14 +69,50 @@
     border-radius: 50%;
     border: 4px solid #8a2be2;
     color: #8a2be2;
-    padding: 10px;
+    width: 60px; /* Increased size */
+    height: 60px; /* Increased size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 24px;
+    flex-shrink: 0;
   }
   
   .contact-details {
     color: gray;
   }
+
+  .contact-label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    position: relative;
+    display: inline-block;
+  }
   
+  .contact-label::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #8a2be2;
+    transition: width 0.3s ease;
+  }
+  
+  .contact-item:hover .contact-label::after {
+    width: 100%;
+  }
+  
+  .contact-item:hover .contact-label {
+    color: #8a2be2;
+  }
+  
+  .contact-value {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
   .contact-form {
     background-color: rgb(244, 242, 249);
     flex: 1;
@@ -92,14 +128,22 @@
   .form-row input,
   .form-row textarea {
     width: 100%;
-    padding: 10px;
+    padding: 15px; /* Increased padding */
     border: 1px solid #ccc;
     border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .form-row input:focus,
+  .form-row textarea:focus {
+    outline: none;
+    border-color: #8a2be2;
+    box-shadow: 0 0 0 2px rgba(138, 43, 226, 0.2);
   }
   
   .form-row button {
     width: 100%;
-    padding: 10px;
+    padding: 15px; /* Increased padding */
     background-color: #8a2be2;
     color: white;
     border: none;
@@ -107,11 +151,12 @@
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
   }
   
   .form-row button:hover {
     background-color: #000;
+    transform: translateY(-2px);
   }
   
   .get-started-section {

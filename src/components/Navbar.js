@@ -33,7 +33,7 @@ const Navbar = () => {
         </div>
         <div className="contact-info">
           <span className="email">
-            <FaEnvelope /> info@spacinfo.com
+            <FaEnvelope /> info@spacinfotech.co.uk
           </span>
           <div className="social-icons">
             <FaTwitter />
@@ -63,7 +63,7 @@ const Navbar = () => {
         <div className="nav-right">
           <FaSearch />
           <span className="phone">
-            <FaPhone /> +1 (123) 456-7890
+            <FaPhone /> 07482187549
           </span>
         </div>
       </div>

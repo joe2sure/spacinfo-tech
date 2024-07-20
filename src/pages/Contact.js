@@ -1,6 +1,8 @@
 import React from 'react';
 import '../styles/ContactPage.css';
-import contactBanner from '../assets/images/banner_img2.jpg'; // Import the banner image
+import contactBanner from '../assets/images/banner_img2.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';// Import the banner image
 
 const Contact = () => {
   return (
@@ -13,28 +15,34 @@ const Contact = () => {
       </div>
       <div className="contact-content">
         <div className="contact-text">
-          <h3 className="contact-subtitle">-- Contact With Us</h3>
+          <h3 className="contact-subtitle">-- Contact Us</h3>
           <h2 className="contact-title">Feel Free to Get in Touch</h2>
           <div className="contact-info">
             <div className="contact-item">
-              <div className="contact-icon"><i className="fas fa-phone"></i></div>
+              <div className="contact-icon">
+                <FontAwesomeIcon icon={faPhone} />
+              </div>
               <div className="contact-details">
-                <p>Call anytime</p>
-                <p>+88(9800) 6802</p>
+                <p className="contact-label">Call anytime</p>
+                <p className="contact-value">07482187549</p>
               </div>
             </div>
             <div className="contact-item">
-              <div className="contact-icon"><i className="fas fa-envelope"></i></div>
+              <div className="contact-icon">
+                <FontAwesomeIcon icon={faEnvelope} />
+              </div>
               <div className="contact-details">
-                <p>Send Email</p>
-                <p>needhelp@co.uk</p>
+                <p className="contact-label">Send Email</p>
+                <p className="contact-value">info@spacinfotech.co.uk</p>
               </div>
             </div>
             <div className="contact-item">
-              <div className="contact-icon"><i className="fas fa-map-marker-alt"></i></div>
+              <div className="contact-icon">
+                <FontAwesomeIcon icon={faMapMarkerAlt} />
+              </div>
               <div className="contact-details">
-                <p>Visit Now</p>
-                <p>wolvehampton street uk</p>
+                <p className="contact-label">Visit Now</p>
+                <p className="contact-value">14 Waterloo Rd WV1 4BS</p>
               </div>
             </div>
           </div>
@@ -58,6 +66,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
+
       <div className="get-started-section">
         <div className="get-started-container">
           <div className="get-started-overlay">

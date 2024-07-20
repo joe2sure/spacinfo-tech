@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 
 import "./App.css";
 import Navbar from "./components/Navbar";
@@ -15,6 +15,7 @@ import CallToActionSection from "./components/CallToActionSection";
 import FooterSection from "./components/FooterSection";
 import Service from "./pages/Service";
 import Contact from "./pages/Contact";
+import CashwyrePaymentService from "./pages/CashwyrePaymentService";
 
 function App() {
   return (
@@ -23,7 +24,6 @@ function App() {
         <Navbar />
         <Routes>
           <Route
-            exact
             path="/"
             element={
               <>
@@ -44,6 +44,9 @@ function App() {
           <Route path="/about" element={<AboutUs />}/>
           <Route path="/services" element={<Service />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/cashwyre" element={<CashwyrePaymentService/>}/>
+          {/* Add a default route that redirects to the home page */}
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
         <FooterSection />
       </div>

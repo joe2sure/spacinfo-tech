@@ -46,9 +46,9 @@ const FooterSection = () => {
           </div>
           <div className="footer-column">
             <h3 className="footer-heading">Contact</h3>
-            <p><FaPhone /> +88(9800) 6802</p>
-            <p><FaEnvelope /> spacinfo@co.uk</p>
-            <p>88 Brooklyn Golden Road</p>
+            <p><FaPhone /> 07482187549</p>
+            <p><FaEnvelope /> info@spacinfotech.co.uk</p>
+            <p>14 Waterloo Rd WV1 4BS</p>
           </div>
         </div>
       </div>

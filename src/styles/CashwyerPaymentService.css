@@ -1,0 +1,184 @@
+.cashwyre-container {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+  }
+  
+  h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .hero-section {
+    background-image: url('../assets/images/AboutUs_img.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+  }
+  
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+  }
+  
+  .hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  
+  .get-started-btn {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: #8a2be2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .get-started-btn:hover {
+    background-color: #7a1dd1;
+    transform: scale(1.05);
+  }
+  
+  .about-section {
+    display: flex;
+    padding: 5rem 10%;
+    background-color: #f5f5f5;
+  }
+  
+  .about-content {
+    flex: 1;
+    padding-right: 2rem;
+  }
+  
+  .about-image {
+    flex: 1;
+    background-image: url('../assets/images/AboutUs_img.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .about-image:hover {
+    transform: scale(1.05);
+  }
+  
+  .objective-mission-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 10%;
+  }
+  
+  .card {
+    flex-basis: 45%;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+  }
+  
+  .services-section, .team-section, .why-use-section {
+    padding: 5rem 10%;
+  }
+  
+  .services-grid, .team-grid, .reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .service-card, .team-member, .reason-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+  
+  .service-card:hover, .team-member:hover, .reason-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+  }
+  
+  .member-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' fill='%23CCCCCC'/%3E%3Cpath d='M60 20C49 20 40 29 40 40C40 51 49 60 60 60C71 60 80 51 80 40C80 29 71 20 60 20ZM60 70C44 70 30 77 30 85V90H90V85C90 77 76 70 60 70Z' fill='%23888888'/%3E%3C/svg%3E");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .member-image img {
+    display: none; /* Hide any img elements inside */
+  }
+  
+  .register-section {
+    background-color: #f5f5f5;
+    padding: 5rem 10%;
+  }
+  
+  .register-steps {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+  
+  .register-step {
+    flex-basis: 22%;
+    text-align: center;
+  }
+  
+  .step-number {
+    width: 50px;
+    height: 50px;
+    background-color: #8a2be2;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .about-section, .objective-mission-section {
+      flex-direction: column;
+    }
+  
+    .card, .register-step {
+      flex-basis: 100%;
+      margin-bottom: 2rem;
+    }
+  
+    .register-steps {
+      flex-direction: column;
+    }
+  }
