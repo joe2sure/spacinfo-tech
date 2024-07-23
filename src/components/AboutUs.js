@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaDesktop, FaNetworkWired, FaCheck } from 'react-icons/fa';
 import '../styles/AboutUs.css';
+import CEOSection from './CEOSection.js';
 
 
 
@@ -8,6 +9,8 @@ const AboutUs = () => {
     const aboutImage1 = require('../assets/images/AboutUs_img.jpg');
     const aboutImage2 = require('../assets/images/AboutUs_img2.jpg');
   return (
+    <>
+    <CEOSection/>
     <section className="about-section">
       <div className="about-container">
         <div className="about-images">
@@ -39,6 +42,8 @@ const AboutUs = () => {
         </div>
       </div>
     </section>
+    </>
+
   );
 };
 
