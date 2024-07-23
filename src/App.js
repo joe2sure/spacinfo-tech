@@ -16,6 +16,8 @@ import FooterSection from "./components/FooterSection";
 import Service from "./pages/Service";
 import Contact from "./pages/Contact";
 import CashwyrePaymentService from "./pages/CashwyrePaymentService";
+// import Trainer from "./pages/Trainer";
+import TrainerSection from "./components/TrainerSection";
 
 function App() {
   return (
@@ -29,6 +31,7 @@ function App() {
               <>
                 <Banner />
                 <AboutUs />
+                <TrainerSection/>
                 <FeaturesSection />
                 <div className="offerings-ready-container">
                   <OfferingsSection />
