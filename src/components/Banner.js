@@ -17,13 +17,13 @@ const Banner = () => {
       image: bannerImage1,
       subtitle: "BECOME EMPLOYABLE IN DEMANDING IT SKILLS",
       title: "GET TRAINED BY EXPERIENCED EXPERTS",
-      link: "/courses/it-skills",
+      link: "/services",
     },
     {
       image: bannerImage2,
       subtitle: "ADVANCE YOUR CAREER IN TECHNOLOGY",
       title: "CUTTING-EDGE COURSES FOR PROFESSIONALS",
-      link: "/courses/professional",
+      link: "/services",
     },
     {
       image: bannerImage3,
