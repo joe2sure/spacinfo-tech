@@ -12,7 +12,7 @@
 }
 
 .logo {
-  background-color: black;
+  /* background-color: black; */
   display: flex;
   align-items: center;
   height: 60px;
@@ -21,6 +21,7 @@
 .logo img {
   height: 100%;
   max-height: 50px;
+  filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.1)); 
 }
 
 .welcome-text {
@@ -102,6 +103,10 @@
   cursor: pointer;
 }
 
+.mobile-logo {
+  display: none;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .navbar-top {
@@ -110,21 +115,33 @@
 
   .navbar-bottom {
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .logo {
-    order: 1;
+  .mobile-logo {
+    display: flex;
+    order: 2;
     flex-grow: 1;
+    justify-content: center;
+  }
+
+  .mobile-logo .logo {
+    height: 40px;
+    /* background-color: transparent; */
+  }
+
+  .mobile-logo img {
+    max-height: 40px;
   }
 
   .menu-icon {
     display: block;
-    order: 2;
+    order: 1;
   }
 
   .nav-right {
     order: 3;
-    margin-left: auto;
   }
 
   .nav-right .phone {

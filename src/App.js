@@ -18,6 +18,7 @@ import Contact from "./pages/Contact";
 import CashwyrePaymentService from "./pages/CashwyrePaymentService";
 // import Trainer from "./pages/Trainer";
 import TrainerSection from "./components/TrainerSection";
+import AboutUsPage from "./pages/AboutPage";
 
 function App() {
   return (
@@ -44,7 +45,7 @@ function App() {
               </>
             }
           />
-          <Route path="/about" element={<AboutUs />}/>
+          <Route path="/about" element={<AboutUsPage />}/>
           <Route path="/services" element={<Service />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/cashwyre" element={<CashwyrePaymentService/>}/>

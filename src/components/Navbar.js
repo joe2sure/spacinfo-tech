@@ -46,6 +46,11 @@ const Navbar = () => {
         <div className="menu-icon" onClick={handleMenuToggle}>
           {menuOpen ? <FaTimes /> : <FaBars />}
         </div>
+        <div className="logo mobile-logo">
+          <Link to="/">
+            <img src={logo} alt="SpaceInfo Tech Logo" />
+          </Link>
+        </div>
         <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
           <li>
             <Link to="/" onClick={handleMenuToggle}>Home</Link>

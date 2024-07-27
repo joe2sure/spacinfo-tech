@@ -2,6 +2,12 @@
 .features-section {
   padding: 80px 0;
   background-color: #fff;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.features-section.animate {
+  opacity: 1;
 }
 
 .features-container {

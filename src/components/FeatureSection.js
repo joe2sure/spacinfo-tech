@@ -1,8 +1,7 @@
 // src/components/FeaturesSection.js
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { FaLightbulb, FaCog, FaRocket } from 'react-icons/fa';
 import '../styles/FeaturesSection.css';
-
 
 const FeatureCard = ({ image, icon, title }) => (
   <div className="feature-card">
@@ -19,6 +18,29 @@ const FeatureCard = ({ image, icon, title }) => (
 );
 
 const FeaturesSection = () => {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const sectionElement = sectionRef.current; // store ref in a variable
+
+    const handleScroll = () => {
+      if (sectionElement) {
+        const { top } = sectionElement.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        if (top < windowHeight * 0.8) {
+          sectionElement.classList.add('animate');
+        } else {
+          sectionElement.classList.remove('animate');
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [sectionRef]);
+
   const features = [
     {
       image: require('../assets/images/banner_img1.jpg'),
@@ -38,7 +60,7 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section className="features-section">
+    <section className="features-section" ref={sectionRef}>
       <div className="features-container">
         {features.map((feature, index) => (
           <FeatureCard key={index} {...feature} />

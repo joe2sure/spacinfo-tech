@@ -1,8 +1,7 @@
-// src/components/OfferingsSection.js
-// import './OfferingsSection.css';
-import React from 'react';
-import { FaCode, FaChartLine, FaShieldAlt, FaPencilRuler, FaDatabase } from 'react-icons/fa';
+import React, { useEffect, useRef } from 'react';
+import { FaCode, FaChartLine, FaShieldAlt, FaPencilRuler, FaDatabase, FaAddressBook, FaSuitcase } from 'react-icons/fa';
 import '../styles/OfferingsSection.css';
+// import { icon } from '@fortawesome/fontawesome-svg-core';
 
 
 const OfferingBox = ({ icon, title, description }) => (
@@ -16,6 +15,28 @@ const OfferingBox = ({ icon, title, description }) => (
 );
 
 const OfferingsSection = () => {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const sectionElement = sectionRef.current; // store ref in a variable
+
+    const handleScroll = () => {
+      if (sectionElement) {
+        const { top } = sectionElement.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        if (top < windowHeight * 0.8) {
+          sectionElement.classList.add('animate');
+        } else {
+          sectionElement.classList.remove('animate');
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [sectionRef]);
   const offerings = [
     {
       icon: <FaCode />,
@@ -41,6 +62,16 @@ const OfferingsSection = () => {
       icon: <FaDatabase />,
       title: "Database Application Developer",
       description: "Transforming raw data into actionable insights."
+    },
+    {
+      icon: <FaAddressBook />,
+      title: "Data Entry",
+      description: "Ensuring accurate and efficient data management for your business."
+    },
+    {
+      icon: <FaSuitcase />,
+      title: "Many More",
+      description: "Explore a wide range of professional IT services tailored to your needs."
     }
   ];
 

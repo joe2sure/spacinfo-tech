@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import "../styles/ServicePage.css";
-import serviceBanner from "../assets/images/banner_img1.jpg"; // Import the banner image
-import serviceImage1 from "../assets/images/banner_img3.jpg"; // Sample image
-import serviceImage2 from "../assets/images/AboutUs_img.jpg"; // Sample image
-import cardImage1 from "../assets/images/AboutUs_img2.jpg"; // Sample image for cards
-import cardImage2 from "../assets/images/banner_img2.jpg"; // Sample image for cards
+import serviceBanner from "../assets/images/banner_img1.jpg";
+import serviceImage1 from "../assets/images/banner_img3.jpg";
+import serviceImage2 from "../assets/images/AboutUs_img.jpg";
+import cardImage1 from "../assets/images/AboutUs_img2.jpg";
+import cardImage2 from "../assets/images/banner_img2.jpg";
 import { Link } from "react-router-dom";
 
 const Service = () => {
-
   const [expanded1, setExpanded1] = useState(false);
   const [expanded2, setExpanded2] = useState(false);
 
@@ -17,12 +16,15 @@ const Service = () => {
 
   const truncateText = (text, maxLength) => {
     if (text.length <= maxLength) return text;
-    return text.substr(0, maxLength) + '...';
+    return text.substr(0, maxLength) + "...";
   };
 
-  const serviceText1 = "Cashwyre specializes in cross-border payments and offers various financial services, including global transfers (PaySend), automated Bitcoin and USD savings (BitSave), and cryptocurrency trading. Additional services include crypto transactions, WebPay for receiving global payments, airtime and data purchases, tuition payments, and gift cards.";
-  
-  const serviceText2 = "Cashwyre was conceived in 2022 to address the significant challenges in Africa's payment infrastructure, particularly the difficulty in value exchange. Launched in mid-2023 on Android and iOS, it utilizes Bitcoin technology for efficient and rapid cross-country transactions. Cashwyre now enables seamless remittances to over 10 African countries and China through a single API call, offering competitive rates and high-speed processing.";
+  const serviceText1 =
+    "Cashwyre specializes in cross-border payments and offers various financial services, including global transfers (PaySend), automated Bitcoin and USD savings (BitSave), and cryptocurrency trading. Additional services include crypto transactions, WebPay for receiving global payments, airtime and data purchases, tuition payments, and gift cards.";
+
+  const serviceText2 =
+    "Cashwyre was conceived in 2022 to address the significant challenges in Africa's payment infrastructure, particularly the difficulty in value exchange. Launched in mid-2023 on Android and iOS, it utilizes Bitcoin technology for efficient and rapid cross-country transactions. Cashwyre now enables seamless remittances to over 10 African countries and China through a single API call, offering competitive rates and high-speed processing.";
+
   return (
     <div className="service-page">
       <div
@@ -34,6 +36,7 @@ const Service = () => {
           <p className="service-banner-subtitle">Explore</p>
         </div>
       </div>
+      
       <div className="about-section">
         <div className="about-container">
           <div className="about-images">
@@ -77,7 +80,7 @@ const Service = () => {
         </div>
       </div>
       <div className="cards-section">
-        <div className="cards-row">
+        <div className="cards-container">
           <div className="card">
             <div className="card-image-container">
               <img src={cardImage1} alt="Card 1" className="card-image" />
@@ -102,8 +105,6 @@ const Service = () => {
               </p>
             </div>
           </div>
-        </div>
-        <div className="cards-row">
           <div className="card">
             <div className="card-image-container">
               <img src={cardImage1} alt="Card 3" className="card-image" />
@@ -131,18 +132,6 @@ const Service = () => {
       </div>
       <div className="more-services-section">
         <div className="more-services-container">
-          <div className="more-services-images">
-            <img
-              src={serviceImage1}
-              alt="More Service 1"
-              className="more-service-image-1"
-            />
-            <img
-              src={serviceImage2}
-              alt="More Service 2"
-              className="more-service-image-2"
-            />
-          </div>
           <div className="more-services-content">
             <h3 className="more-services-subtitle">-- Discover More</h3>
             <h2 className="more-services-title">Cashwyre Payment Service</h2>
@@ -154,7 +143,7 @@ const Service = () => {
                     {expanded1 ? serviceText1 : truncateText(serviceText1, 100)}
                   </p>
                   <button className="read-more-btn" onClick={toggleExpand1}>
-                    {expanded1 ? 'Read Less' : 'Read More'}
+                    {expanded1 ? "Read Less" : "Read More"}
                   </button>
                 </div>
               </div>
@@ -165,7 +154,7 @@ const Service = () => {
                     {expanded2 ? serviceText2 : truncateText(serviceText2, 100)}
                   </p>
                   <button className="read-more-btn" onClick={toggleExpand2}>
-                    {expanded2 ? 'Read Less' : 'Read More'}
+                    {expanded2 ? "Read Less" : "Read More"}
                   </button>
                 </div>
               </div>
